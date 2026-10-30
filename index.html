@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HealthPMS | Smart Healthcare Project Management</title>
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/app.js" defer></script>
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar">
+  <div class="brand">HealthPMS <small>Smart Healthcare Project Management</small></div>
+  <nav id="nav">
+    <button class="active" data-page="dashboard">Dashboard</button>
+    <button data-page="initiation">Project Initiation</button>
+    <button data-page="scope">Scope &amp; WBS</button>
+    <button data-page="schedule">Schedule &amp; Resources</button>
+    <button data-page="cost">Cost &amp; EVM</button>
+    <button data-page="quality">Quality &amp; Risks</button>
+    <button data-page="reports">Reports</button>
+  </nav>
+  <div class="sidefoot">COMSATS University Islamabad<br>Sahiwal Campus · CSE-494</div>
+</aside>
+<main>
+<header class="top"><div><h1>Smart Healthcare PMS</h1><p>Project planning, execution, monitoring and control</p></div><button id="refresh" class="light">↻ Refresh</button></header>
+<section id="content" class="content"><div class="loading">Loading project records…</div></section>
+<footer>Software Project Management · Fall 2026 · HealthPMS</footer>
+</main>
+</div>
+<div id="toast" role="status"></div>
+<div id="modal" class="modal hidden"><div class="modalbox"><div class="modalhead"><h2 id="modalTitle">Add record</h2><button id="closeModal" class="light">✕</button></div><form id="recordForm"><div id="formFields" class="formgrid"></div><div class="formactions"><button type="submit">Save record</button></div></form></div></div>
+</body></html>
